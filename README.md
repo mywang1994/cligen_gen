@@ -1,5 +1,4 @@
-# ClickGen: Directed Exploration of Synthesizable Chemical Space Leading to the Rapid Synthesis
-# of Novel and Active Lead Compounds via Modular Reactions and Reinforcement Learning
+# ClickGen: Directed Exploration of Synthesizable Chemical Space Leading to the Rapid Synthesis of Novel and Active Lead Compounds via Modular Reactions and Reinforcement Learning
 
 ![overview of the architecture of ClickGen](/images/figure.png)
 
@@ -26,7 +25,7 @@ if utilizing GPU accelerated model training
 
 
 ## Running ClickGen
-### 1.Prepare molecular dataset
+### 1.Prepare synthons dataset
 The ClickGen model requires labeled reactants, stored in data files in `.csv` format, as well as protein structures that have been energy-minimized and repaired, saved in `.pdb` format. Finally, a standardized SMILES format for the initial synthons fragment is essential, with the annotation method detailed in `./data/prepare_data.py` or as described in the data preparation section of the article.
 
  `python ./data/prepare_data.py --input_path 'the path of SMILES csv files'
