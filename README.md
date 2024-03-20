@@ -9,7 +9,20 @@ This repository contains the source of ClickGen, a deep learning model that util
 
 Despite the vast potential of generative models, the severe challenge in low synthesizability of many generated molecules has restricted their potential impacts in real-world scenarios. In response to this issue, we develop ClickGen, a deep learning model that utilizes modular reactions like click chemistry to assemble molecules and incorporates reinforcement learning along with inpainting technique to ensure that the proposed molecules display high diversity, novelty and strong binding tendency. We then further conducted wet-lab validation on ClickGen’s proposed molecules for PARP1. Due to the guaranteed high synthesizability and model-generated synthetic routes for reference, we successfully produced and tested the bioactivity of these novel compounds in just 20 days, much faster than typically expected time frame when handling sufficiently novel molecules. In bioactivity assays, two lead compounds demonstrated superior anti-proliferative efficacy against cancer cell lines, low toxicity, and nanomolar-level inhibitory activity to PARP1. We anticipate that ClickGen and related models could potentially signify a new paradigm in molecular generation, advancing the future of AI and automated experimentation-driven closed-loop molecular design closer to reality.
 
-## Requirements
+
+## System Requirements
+
+### Hardware requirements
+
+`ClickGen` software is recommended for use on computers with more than 10GB of VRAM.
+
+### OS Requirements
+This package is supported for *Linux* and *Windows*. The package has been tested on the following systems:
++ Windows: Windows 11 23H2
++ Linux: Ubuntu 22.04
+
+### Software requirements
+
 - Python == 3.7
 - pytorch >= 1.1.0
 - openbabel == 2.4.1
@@ -22,7 +35,22 @@ if utilizing GPU accelerated model training
 
 ## Creat a new environment in conda 
 
- `conda env create -f environment.yml `
+ ` `
+
+
+
+### Install from Github
+```
+git clone https://github.com/mywang1994/cligen_gen
+cd cligen_gen
+conda env create -f environment.yml
+```
+
+
+
+
+
+
 
 
 
