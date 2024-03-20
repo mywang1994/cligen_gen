@@ -20,7 +20,9 @@ Despite the vast potential of generative models, the severe challenge in low syn
 if utilizing GPU accelerated model training 
 - CUDA==10.2 & cudnn==7.5 
 
+## Creat a new environment in conda 
 
+ `conda env create -f environment.yml `
 
 
 
