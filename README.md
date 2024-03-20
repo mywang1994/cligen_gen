@@ -33,24 +33,12 @@ This package is supported for *Linux* and *Windows*. The package has been tested
 if utilizing GPU accelerated model training 
 - CUDA==10.2 & cudnn==7.5 
 
-## Creat a new environment in conda 
-
- ` `
-
-
-
-### Install from Github
+## Install from Github & Creat a new environment in conda 
 ```
 git clone https://github.com/mywang1994/cligen_gen
 cd cligen_gen
 conda env create -f environment.yml
 ```
-
-
-
-
-
-
 
 
 
