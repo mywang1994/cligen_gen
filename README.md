@@ -36,8 +36,8 @@ if utilizing GPU accelerated model training
 ## Install from Github & Creat a new environment in conda 
 ```
 git clone https://github.com/mywang1994/cligen_gen
-cd cligen_gen
 conda env create -f environment.yml
+cd cligen_gen
 ```
 
 
