@@ -53,12 +53,12 @@ The ClickGen model requires labeled reactants, stored in data files in `.csv` fo
 
 
 
-'''
+```
 python run.py    --input [3*]NC1CCCC(N[3*])CC1 # initial synthon fragment 
                   --syn_p  ./data/synthons/synthons.csv #labeled reactants
                   --protein ./data/parp1.pdb #protein
                   --num_sims 100000 # simulation steps
-'''
+```
 
 The whole process takes about 5-8h, or you can use our online [ClickGen server](https://carbonsilico.com/)
 
