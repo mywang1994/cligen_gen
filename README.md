@@ -46,8 +46,10 @@ cd cligen_gen
 ### 1.Prepare synthons dataset
 The ClickGen model requires labeled reactants, stored in data files in `.csv` format, as well as protein structures that have been energy-minimized and repaired, saved in `.pdb` format. Finally, a standardized SMILES format for the initial synthons fragment is essential, with the annotation method detailed in `./data/prepare_data.py` or as described in the data preparation section of the article.
 
- `python ./data/prepare_data.py --input_path 'the path of SMILES csv files'
-                                --output_path ./data/synthons` 
+ ```
+python ./data/prepare_data.py   --input_path  SMILES.csv       # the path of SMILES csv files'
+                                --output_path output.csv       # the synthons csv files  
+```
 
 ### 2.Run the ClickGen
 
