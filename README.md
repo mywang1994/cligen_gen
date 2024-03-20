@@ -59,16 +59,8 @@ The ClickGen model requires labeled reactants, stored in data files in `.csv` fo
                   --protein ./data/parp1.pdb #protein
                   --num_sims 100000 # simulation steps`
 
-
-
-
-
-
-
-
-
-
-
-
-
 Or you can use our online [ClickGen server](https://carbonsilico.com/)
+
+## License
+
+This project is covered under the MIT License.
