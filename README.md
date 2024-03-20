@@ -14,7 +14,7 @@ Despite the vast potential of generative models, the severe challenge in low syn
 
 ### Hardware requirements
 
-`ClickGen` software is recommended for use on computers with more than 10GB of VRAM.
+`ClickGen` software is recommended for use on computers with more than 10GB of VRAM or 16GB of RAM
 
 ### OS Requirements
 This package is supported for *Linux* and *Windows*. The package has been tested on the following systems:
@@ -53,13 +53,14 @@ The ClickGen model requires labeled reactants, stored in data files in `.csv` fo
 
 
 
-
-`python run.py    --input [3*]NC1CCCC(N[3*])CC1 # initial synthon fragment 
+'''
+python run.py    --input [3*]NC1CCCC(N[3*])CC1 # initial synthon fragment 
                   --syn_p  ./data/synthons/synthons.csv #labeled reactants
                   --protein ./data/parp1.pdb #protein
-                  --num_sims 100000 # simulation steps`
+                  --num_sims 100000 # simulation steps
+'''
 
-Or you can use our online [ClickGen server](https://carbonsilico.com/)
+The whole process takes about 5-8h, or you can use our online [ClickGen server](https://carbonsilico.com/)
 
 ## License
 
