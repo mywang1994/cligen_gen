@@ -62,8 +62,7 @@ python run.py     --input [3*]NC1CCCC(N[3*])CC1                # initial synthon
                   --num_sims 100000                            # simulation steps
 ```
 
-The whole process takes about 5-8h, or you can use our online [ClickGen server](https://carbonsilico.com/)
-
+The whole process takes about 5-8h.
 ## License
 
 This project is covered under the MIT License.
