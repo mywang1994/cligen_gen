@@ -60,7 +60,7 @@ To train the Reaction-based combiner, it is necessary to utilize a SMILES datase
 
 
 ```
-python train_combiner.py   --mol_p  SMILES.csv       # the path of SMILES .csv files
+python train_combiner.py   --mol_p  SMILES.csv            # the path of SMILES .csv files
                             --syn_path synthons.csv       # the path of labeled synthons .sv files
                             --num_p 100                   # the number of positive_samples
                             --num_n 1000                  # the number of negative_samples
@@ -77,7 +77,7 @@ Ultimately, the model file will be stored in the  `./data/model/  `directory.
 Training the Inpainting-based generator model requires the dataset created in step 1, along with the input model parameters such as embedding and hidden dimensions. Users can also configure the model's skip connections and attention mechanisms flexibly via the command line, allowing the model to be adjusted according to different needs. Additionally, hardware requirements include at least 20GB of GPU memory or CPU memory (not recommended due to slower training speed).
 
 ```
-python train_inpainting.py  --mol_p  SMILES.csv          # the path of SMILES .csv files
+python train_inpainting.py  --mol_p  SMILES.csv            # the path of SMILES .csv files
                             --embed_dim 64                 # the embedding size
                             --hid_dim 100                  # the hidden dimension
                             --skip_connection 1000         # skip connection
@@ -97,11 +97,11 @@ Ultimately, the model file will be stored in the  `./data/model/  `directory.
 To run the ClickGen model, you need to use the dataset obtained in step 1, as well as the Inpainting-based generator and Reaction-based combiner trained in steps 2 and 3. You also need the starting synthons (which can be omitted in inpainting mode), the corresponding protein target pdb structure, and the input parameters for the model, such as the number of molecules to be generated and the parameters for the Inpainting-based generator and Reaction-based combiner.
 
 ```
-python run.py     --inpainting Trur/False                      # 是否需要使用inpainting模块
-                  --input [3*]NC1CCCC(N[3*])CC1                # initial synthon fragment,如果使用inpainting模式则无需输入起始反应子
+python run.py     --inpainting Trur/False                      # use the inpainting module
+                  --input [3*]NC1CCCC(N[3*])CC1                # Initial synthon fragment. If using inpainting mode, no need to input the initial synthon.
                   --syn_p        synthons.csv                  # the path of labeled synthons
                   --protein ./data/parp1.pdb                   # protein
-                  --num_sims 10000                            # simulation steps
+                  --num_sims 10000                             # simulation steps
 ```
 
 Based on our tests, generating 10,000 molecules with ClickGen takes between 0.5 to 1.5 hours, depending on the system and hardware configuration.
