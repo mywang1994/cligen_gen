@@ -76,6 +76,7 @@ Ultimately, the model file will be stored in the  `./data/model/  `directory.
 
 Training the Inpainting-based generator model requires the dataset created in step 1, along with the input model parameters such as embedding and hidden dimensions. Users can also configure the model's skip connections and attention mechanisms flexibly via the command line, allowing the model to be adjusted according to different needs. Additionally, hardware requirements include at least 20GB of GPU memory or CPU memory (not recommended due to slower training speed).
 
+```
 python train_inpainting.py  --mol_p  SMILES.csv          # the path of SMILES .csv files
                             --embed_dim 64                 # the embedding size
                             --hid_dim 100                  # the hidden dimension
@@ -84,7 +85,7 @@ python train_inpainting.py  --mol_p  SMILES.csv          # the path of SMILES .c
                             --lr 1e-4                      # the learning rate
                             --epoch 80                     # the training epoches
 
-
+```
 Ultimately, the model file will be stored in the  `./data/model/  `directory.
 
 
