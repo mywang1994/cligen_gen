@@ -14,7 +14,7 @@ Despite the vast potential of generative models, the severe challenge in low syn
 
 ### Hardware requirements
 
-`ClickGen` software is recommended for use on computers with more than 10GB of VRAM or 16GB of RAM
+`ClickGen` software is recommended for use on computers with more than 20GB of VRAM or RAM
 
 ### OS Requirements
 This package is supported for *Linux* and *Windows*. The package has been tested on the following systems:
