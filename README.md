@@ -111,8 +111,6 @@ Based on our tests, generating 10,000 molecules with ClickGen takes between 0.5 
 This project is covered under the MIT License.
 
 
-Sure, you can add the following HTML code to your README file:
-
 ## Need Help?
 
 If you encounter any issues, feel free to <a href="mailto:11919015@zju.edu.cn" style="color: blue; font-weight: bold;">contact us</a>.
