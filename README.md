@@ -39,7 +39,7 @@ if utilizing GPU accelerated model training
 git clone https://github.com/mywang1994/cligen_gen
 cd cligen_gen
 conda env create -f environment.yaml
-
+conda activate click_gen
 ```
 
 
