@@ -1,3 +1,8 @@
+####Here is a script that can reproduce the statistical charts in the article, including those appearing in the main text. Please note the following:
+##1.The script requires gen_smi data to run.
+##It is recommended to run and save each chart individually, as running multiple charts at once may cause bugs.
+##The tab20 color palette in sns.set() may render differently across computers. If there are difficulties with chart colors, please try a different color palette.
+
 
 import os
 import re
