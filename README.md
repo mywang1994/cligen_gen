@@ -61,7 +61,7 @@ To train the Reaction-based combiner, it is necessary to utilize a SMILES datase
 
 ```
 python train_combiner.py   --mol_p  SMILES.csv            # the path of SMILES .csv files
-                            --syn_path synthons.csv       # the path of labeled synthons .sv files
+                            --syn_path synthons.csv       # the path of labeled synthons .csv files
                             --num_p 100                   # the number of positive_samples
                             --num_n 1000                  # the number of negative_samples
                             --lr 1e-4                     # the learning rate
