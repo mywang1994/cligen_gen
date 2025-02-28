@@ -34,7 +34,7 @@ This package is supported for *Linux* and *Windows*. The package has been tested
 if utilizing GPU accelerated model training 
 - CUDA==10.2 & cudnn==7.5 
 
-## Install from Github & Creat a new environment in conda 
+## Install from Github & Create a new environment in conda 
 ```
 git clone https://github.com/mywang1994/cligen_gen
 cd cligen_gen
@@ -65,7 +65,7 @@ python train_combiner.py   --mol_p  SMILES.csv            # the path of SMILES .
                             --num_p 100                   # the number of positive_samples
                             --num_n 1000                  # the number of negative_samples
                             --lr 1e-4                     # the learning rate
-                            --epoch 80                    # the training epoches
+                            --epoch 80                    # the training epochs
 ```
 Ultimately, the model file will be stored in the  `./data/model/  `directory.
 
@@ -97,7 +97,7 @@ Ultimately, the model file will be stored in the  `./data/model/  `directory.
 To run the ClickGen model, you need to use the dataset obtained in step 1, as well as the Inpainting-based generator and Reaction-based combiner trained in steps 2 and 3. You also need the starting synthons (which can be omitted in inpainting mode), the corresponding protein target pdb structure, and the input parameters for the model, such as the number of molecules to be generated and the parameters for the Inpainting-based generator and Reaction-based combiner.
 
 ```
-python run.py     --inpainting Trur/False                      # use the inpainting module
+python run.py     --inpainting True/False                      # use the inpainting module
                   --input [3*]NC1CCCC(N[3*])CC1                # Initial synthon fragment. If using inpainting mode, no need to input the initial synthon.
                   --syn_p        synthons.csv                  # the path of labeled synthons
                   --protein ./data/parp1.pdb                   # protein
